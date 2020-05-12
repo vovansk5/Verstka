@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-      Это тест из MyComp3
+      Это тест из MyComp4
   </div>
 </template>
 
