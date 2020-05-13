@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+</head>
+<body>
+    <div id="myApp">
+        Привет {{msg}}
+        <br>
+        <img :src="myImg"></index>
+        <audio :src="mySong" controls></audio>
+        <button @click="changeSog">Сменить песню</button>
+    </div>
+
+
+    <script>
+        new Vue({
+            el:'#myApp',
+            data:{
+                msg:'vova',
+                myImg:'1.jpg',
+                mySong:'./assets/appl.mp3'
+            },
+            methods: {
+                changeSog() {
+                    this.mySong= (this.mySong=='./assets/appl.mp3') ? './assets/steps.mp3' : './assets/appl.mp3'
+                }
+            }
+        })
+
+    </script>
+</body>
+</html>
